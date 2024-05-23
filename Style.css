@@ -469,6 +469,10 @@ footer {
     align-items: center;
     gap: 20px;
 }
+
+footer span{
+    color: #00aaff;
+}
 /*FOOTER*/
 
 /*RESPONSIVE*/
