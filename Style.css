@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +10,12 @@ body {
     line-height: 1.6;
     background-color: #000;
     color: #fff;
-    margin-top: 70px; /* To offset the fixed header */
+    margin-top: 70px; 
     justify-content: center;
     align-items: center;
 }
 
-/* Navigasi */
+/* NAV */
 header {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -48,8 +47,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #00aaff;
 }
+/* NAV */
 
-/* Bagian Hero */
+/*HERO*/
 #hero {
     background-image: url('image6.jfif');
     background-size: cover;
@@ -77,9 +77,9 @@ nav ul li a:hover {
 
 .btnCenter {
     display: flex;
-    justify-content: center; /* Mengatur posisi horizontal tombol */
-    align-items: flex-start; /* Mengatur posisi vertikal tombol di bawah tulisan */
-    margin-top: 20px; /* Atur jarak antara teks dan tombol */
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 20px; 
 }
 
 
@@ -143,31 +143,30 @@ button {
     transform: translateX(200%);
     transition-delay: 300ms;
   }
+/*HERO*/
   
-
-
-/* Styles for the about section */
+/*ABOUT */
 #about {
-    background-color: #f8f9fa; /* Warna latar belakang yang terang */
+    background-color: #f8f9fa; 
     padding: 4em 0;
-    text-align: center; /* Menyelaraskan konten ke tengah */
+    text-align: center;
 }
 
 #about h2 {
-    color: #333; /* Warna teks judul yang gelap */
-    margin-bottom: 1em; /* Menambahkan sedikit ruang di bawah judul */
+    color: #333; 
+    margin-bottom: 1em; 
 }
 
 .container {
-    max-width: 800px; /* Batasi lebar konten */
-    margin: 0 auto; /* Menyelaraskan konten secara horizontal ke tengah */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em; /* Menambahkan ruang antara elemen */
+    gap: 2em; 
 }
 
 .profile-image {
@@ -175,146 +174,142 @@ button {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1em; /* Menambahkan ruang di bawah gambar profil */
+    margin-bottom: 1em; 
 }
 
 .about-content p {
-    color: #666; /* Warna teks abu-abu gelap */
+    color: #666; 
     font-size: 1.1em;
 }
 
 .skills {
-    background-color: #fff; /* Warna latar belakang putih untuk bagian keahlian */
+    background-color: #fff; 
     padding: 1.5em;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
-    text-align: left; /* Menyelaraskan teks ke kiri */
-    max-width: 600px; /* Batasi lebar bagian keahlian */
-    margin: 0 auto; /* Menyelaraskan bagian keahlian secara horizontal ke tengah */
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.4);
+    text-align: left; 
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .skills h3 {
     text-align: center;
-    color: #333; /* Warna teks judul yang gelap */
-    margin-bottom: 20px; /* Menambahkan ruang di bawah judul */
+    color: #333; 
+    margin-bottom: 20px; 
 }
 
 .skills ul {
     text-align: center;
-    list-style-type: none; /* Menghapus gaya daftar default */
-    padding: 0; /* Menghapus padding default */
+    list-style-type: none; 
+    padding: 0; 
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom dengan lebar yang sama */
-    gap: 1em; /* Menambahkan ruang antara elemen */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1em;
 }
 
-/* Tambahkan garis horizontal di antara setiap baris */
 .skills li {
-    color: #666; /* Warna teks abu-abu gelap */
+    color: #666; 
     font-size: 1em;
-    margin-bottom: 0.5em; /* Menambahkan ruang di bawah setiap keahlian */
-    position: relative; /* Memastikan elemen terkait relatif */
+    margin-bottom: 0.5em; 
+    position: relative; 
 }
 
 .skills li:not(:last-child)::after {
     content: '';
-    position: absolute; /* Memastikan garis terkait posisi absolut */
-    bottom: -0.25em; /* Posisi vertikal garis di bawah teks */
-    left: 0; /* Posisi horizontal garis dari kiri */
-    width: 100%; /* Panjang garis sesuai dengan lebar elemen */
-    border-bottom: 1px solid #ccc; /* Gaya garis */
+    position: absolute; 
+    bottom: -0.25em; 
+    left: 0; 
+    width: 100%; 
+    border-bottom: 1px solid #ccc; 
 }
 
 .experience {
-    background-color: #fff; /* Warna latar belakang putih untuk bagian keahlian */
+    background-color: #fff; 
     padding: 1.5em;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kedalaman */
-    text-align: left; /* Menyelaraskan teks ke kiri */
-    max-width: 600px; /* Batasi lebar bagian keahlian */
-    margin: 0 auto; /* Menyelaraskan bagian keahlian secara horizontal ke tengah */
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.4);
+    text-align: left; 
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .experience h3 {
     text-align: center;
-    color: #333; /* Warna teks judul yang gelap */
-    margin-bottom: 20px; /* Menambahkan ruang di bawah judul */
+    color: #333; 
+    margin-bottom: 20px;
 }
 
 .experience ul {
-    list-style-type: disc; /* Menghilangkan default styling dari bullet point */
-    padding-left: 0; /* Menghilangkan padding kiri untuk ul */
+    list-style-type: disc; 
+    padding-left: 0; 
 }
 
 .experience li {
     color: #333;
     font-size: 1.1em;
     line-height: 1.6;
-    border-bottom: 1px solid #ccc; /* Menambah garis bawah */
-    padding-bottom: 10px; /* Menambah ruang di bawah setiap item */
-    margin-bottom: 10px; /* Menambah ruang di bawah setiap item */
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
 }
+/*ABOUT */
 
 
 
-
-/* Styles for the portfolio section */
+/*PORTOFOLIO*/
 #portfolio {
-    background-image: url('image8.jfif'); /* Background image */
+    background-image: url('image8.jfif');
     background-size: cover;
     background-position: center;
     padding: 4em 0;
-    position: relative; /* Ensure the section is positioned relative for absolute positioning of buttons */
+    position: relative; 
 }
 
-/* Center the heading horizontally */
 #portfolio h2 {
-    text-align: center; /* Center align the heading text */
-    color: #fff; /* Optional: change text color for better visibility against the background */
+    text-align: center; 
+    color: #fff; 
 }
 
 #portfolio .portfolio-item img {
-    width: 100%; /* Set width to 100% */
-    height: 200px; /* Set height to desired value */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
     border-radius: 5px;
     margin-bottom: 1em;
     transition: transform 0.3s;
 }
 
-
-/* Styles for the portfolio navigation buttons */
 .portfolio-navigation {
-    text-align: right; /* Align buttons to the right */
+    text-align: right; 
     margin-bottom: 0;
     position: absolute;
-    top: 10px; /* Position the navigation at the top of the section */
-    right: 20px; /* Position the navigation to the right of the section */
+    top: 10px; 
+    right: 20px; 
 }
 
 .portfolio-navigation button {
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    color: #00aaff; /* Link color */
-    font-size: 16px; /* Adjust font size */
+    background: none; 
+    border: none; 
+    color: #00aaff; 
+    font-size: 16px; 
     cursor: pointer;
-    text-decoration: none; /* No underline */
-    margin-left: 10px; /* Space between buttons */
-    padding: 0; /* Remove padding */
+    text-decoration: none; 
+    margin-left: 10px; 
+    padding: 0; 
 }
 
 .portfolio-navigation button:hover {
-    color: #0056b3; /* Change color on hover */
+    color: #0056b3;
 }
 
 .portfolio-grid {
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Wrap items if they exceed the container width */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
     gap: 2em;
     position: relative;
-    padding-top: 60px; /* Add space for navigation buttons */
+    padding-top: 60px;
 }
 
 .portfolio-item {
@@ -323,13 +318,13 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     text-align: center;
-    max-width: 300px; /* Limit the maximum width of each item */
-    margin: 10px; /* Adjust margin as needed */
-    display: none; /* Hide all portfolio items initially */
+    max-width: 300px; 
+    margin: 10px; 
+    display: none; 
 }
 
 .portfolio-item.active {
-    display: block; /* Display active portfolio item */
+    display: block; 
 }
 
 .portfolio-item:hover img {
@@ -346,124 +341,121 @@ button {
     color: #bbb;
 }
 
-/* Styles for the social icons */
 .social-icon1 {
-    display: inline-block; /* Ensure the icon behaves like a block element */
-    padding: 10px; /* Add padding to create space around the icon */
-    color: #007BFF; /* Text color */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    display: inline-block; 
+    padding: 10px;
+    color: #007BFF; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.3s;
     font-size: 25px;
 }
 
 .social-icon1:hover {
-    color: #fff; /* Darker background color on hover */
-    transform: scale(1.1); /* Increase size on hover */
+    color: #fff; 
+    transform: scale(1.1); 
 }
 
-/* Styles for the "View" links */
 .view-link {
-    display: inline-block; /* Ensure the link behaves like a block element */
-    padding: 5px 10px; /* Add padding to create space around the text */
-    background-color: #007BFF; /* Background color */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    display: inline-block; 
+    padding: 5px 10px; 
+    background-color: #007BFF; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 .view-link:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3;
 }
 
-
-/* Styles for the "View" links */
 .view-link {
-    display: inline-block; /* Ensure the link behaves like a block element */
-    padding: 5px 10px; /* Add padding to create space around the text */
-    background-color: #007BFF; /* Background color */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    display: inline-block; 
+    padding: 5px 10px;
+    background-color: #007BFF; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
     margin-left: 8px;
 }
 
 .view-link:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3; 
 }
 
 
 .container {
-    max-width: 1200px; /* Adjust the maximum width of the container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add some padding to the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
 }
+/*PORTOFOLIO*/
 
 
-/* Kontak */
-/* Styles for the contact section */
+/*CONTACT*/
 #contact {
-    background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+    background-color: #f9f9f9;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-    text-align: center; /* Menyelaraskan konten ke tengah */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
 #contact h2 {
-    color: #333; /* Warna teks judul yang gelap */
-    margin-bottom: 0.5em; /* Menambahkan ruang di bawah judul */
+    color: #333; 
+    margin-bottom: 0.5em; 
 }
 
 #contact ul {
-    list-style-type: none; /* Menghapus default styling daftar */
-    padding: 0; /* Menghapus padding */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 #contact li {
-    color: #666; /* Warna teks abu-abu gelap */
+    color: #666; 
     font-size: 1.1em;
-    margin-bottom: 1em; /* Menambahkan ruang di bawah setiap item */
+    margin-bottom: 1em; 
 }
 
 #contact a {
-    color: #00aaff; /* Warna link */
-    text-decoration: none; /* Menghapus garis bawah default */
-    transition: color 0.3s ease; /* Efek transisi */
+    color: #00aaff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
 #contact a:hover {
-    color: #0056b3; /* Warna link saat dihover */
+    color: #0056b3; 
 }
 
 .social-icons {
-    margin-top: 1em; /* Menambahkan ruang di atas ikon sosial */
-    display: flex; /* Menggunakan flexbox */
-    justify-content: center; /* Menyelaraskan item ke tengah horizontal */
+    margin-top: 1em; 
+    display: flex; 
+    justify-content: center;
 }
 
 .icon-link {
-    display: flex; /* Menggunakan flexbox */
-    flex-direction: column; /* Menyusun teks di bawah ikon */
-    align-items: center; /* Menyelaraskan teks ke tengah */
-    color: #333; /* Warna ikon */
-    font-size: 2em; /* Ukuran ikon */
-    margin-right: 2em; /* Menambahkan ruang antara ikon */
-    transition: color 0.3s ease; /* Efek transisi */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    color: #333; 
+    font-size: 2em; 
+    margin-right: 2em; 
+    transition: color 0.3s ease; 
     margin-top: 45px;
 }
 
 .icon-link span {
-    margin-top: 0.5em; /* Menambahkan ruang antara ikon dan teks */
-    font-size: 0.4em; /* Ukuran teks yang lebih kecil */
+    margin-top: 0.5em; 
+    font-size: 0.4em; 
 }
 
 .icon-link:hover {
-    color: #007bff; /* Warna ikon saat dihover */
+    color: #007bff; 
 }
+/*CONTACT*/
 
-/* Footer */
+/*FOOTER*/
 footer {
     background-color: #111;
     color: white;
@@ -477,85 +469,99 @@ footer {
     align-items: center;
     gap: 20px;
 }
+/*FOOTER*/
 
-
-/* Untuk perangkat dengan lebar layar ≤ 768px */
+/*RESPONSIVE*/
 @media only screen and (max-width: 768px) {
     header {
-        padding: 0.5em 0; /* Mengurangi padding pada header */
-        margin-top: 0; /* Menghapus margin atas pada body */
+        padding: 0.5em 0; 
+        margin-top: 0; 
         height: 40px;
     }
 
     nav ul li {
-        margin: 0 0.5em; /* Menambahkan margin di antara setiap item navigasi */
-        font-size: 0.8em; /* Mengurangi ukuran font pada item navigasi */
-        position: relative; /* Membuat posisi relatif untuk menambahkan pseudo-elemen */
+        margin: 0 0.5em; 
+        font-size: 0.8em; 
+        position: relative; 
     }
 
-    /* Menambahkan garis vertikal */
     nav ul li::after {
-        content: ''; /* Menambahkan konten kosong */
-        position: absolute; /* Membuat posisi absolut */
-        height: 80%; /* Tinggi garis vertikal */
-        width: 1px; /* Lebar garis vertikal */
-        background-color: #ccc; /* Warna garis vertikal */
-        right: -5px; /* Mengatur posisi garis di sebelah kanan */
-        top: 10%; /* Mengatur posisi vertikal garis */
+        content: ''; 
+        position: absolute; 
+        height: 80%; 
+        width: 1px;
+        background-color: #ccc; 
+        right: -5px; 
+        top: 10%;
     }
 
-    /* Menghilangkan garis vertikal pada item terakhir */
     nav ul li:last-child::after {
-        display: none; /* Menghilangkan pseudo-elemen pada item terakhir */
+        display: none; 
     }
 
     .hero-content h1 {
-        font-size: 2em; /* Mengurangi ukuran font judul hero */
+        font-size: 2em; 
     }
 
     .hero-content p {
-        font-size: 1em; /* Mengurangi ukuran font teks hero */
+        font-size: 1em; 
     }
 
     .btnCenter {
-        flex-direction: column; /* Menata tombol secara vertikal di bawah teks */
-        align-items: center; /* Menyelaraskan tombol ke tengah */
+        flex-direction: column;
+        align-items: center; 
     }
 
     button {
-        width: auto; /* Mengatur lebar tombol sesuai konten */
-        font-size: 14px; /* Mengurangi ukuran font tombol */
+        width: auto; 
+        font-size: 14px; 
     }
 
     .icon-link {
-        margin-right: 0; /* Menghapus margin kanan pada ikon link */
-        margin-bottom: 10px; /* Menambahkan margin bawah untuk pemisahan ikon */
-        width: 100%; /* Mengatur lebar ikon link agar memenuhi lebar layar */
-        display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
-        justify-content: center; /* Menyelaraskan ikon ke tengah */
-        align-items: center; /* Menyelaraskan ikon ke tengah */
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        position: relative;
+    }
+
+    .icon-link::after {
+        content: '';
+        position: absolute;
+        height: 80%; 
+        width: 1px; 
+        background-color: #ccc; 
+        right: -5px; 
+        top: 10%; 
+    }
+
+   
+    .icon-link:last-child::after {
+        display: none; 
     }
 }
 
-/* Untuk perangkat dengan lebar layar antara 769px dan 1024px */
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .hero-content h1 {
-        font-size: 2.5em; /* Mengurangi ukuran font judul hero */
+        font-size: 2.5em; 
     }
 
     .hero-content p {
-        font-size: 1.1em; /* Mengurangi ukuran font teks hero */
+        font-size: 1.1em; 
     }
 }
 
-/* Untuk perangkat dengan lebar layar ≥ 1025px */
 @media only screen and (min-width: 1025px) {
     .hero-content h1 {
-        font-size: 3em; /* Mengembalikan ukuran font judul hero */
+        font-size: 3em; 
     }
 
     .hero-content p {
-        font-size: 1.2em; /* Mengembalikan ukuran font teks hero */
+        font-size: 1.2em; 
     }
 }
+/*RESPONSIVE*/
 
