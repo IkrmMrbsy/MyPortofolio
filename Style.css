@@ -12,6 +12,8 @@ body {
     background-color: #000;
     color: #fff;
     margin-top: 70px; /* To offset the fixed header */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigasi */

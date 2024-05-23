@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function scrollToAbout() {
     // Mendapatkan elemen dengan ID "about"
     const aboutSection = document.getElementById('about');
-    
-    // Melakukan scroll ke elemen "about" dengan efek smooth
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
+
+    // Menambahkan jeda waktu sebelum melakukan scroll
+    setTimeout(() => {
+        // Melakukan scroll ke elemen "about" dengan efek smooth
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }, 1000); // 2000 milidetik (2 detik)
 }
