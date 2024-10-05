@@ -27,7 +27,7 @@ header {
     transition: background-color 0.3s;
 }
 
-/*Dark Mode*/
+/*DARK MODE*/
 .darkBtn {
     display: inline-block;
     width: 50px; 
@@ -103,7 +103,7 @@ header {
     background-color: #14213d;
     color: white;
 }
-/*Dark Mode*/
+/*DARK MODE*/
 
 
 
@@ -335,8 +335,6 @@ nav ul li a:hover {
     margin-bottom: 10px; 
 }
 /*ABOUT */
-
-
 
 /*PORTOFOLIO*/
 #portfolio {
