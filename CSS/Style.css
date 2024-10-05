@@ -100,7 +100,7 @@ header {
 }
 
 .dark-mode footer {
-    background-color: #14213d;
+    background-color: #000000;
     color: white;
 }
 /*DARK MODE*/
@@ -566,7 +566,7 @@ nav ul li a:hover {
 
 /*FOOTER*/
 footer {
-    background-color: #111;
+    background-color:  #14213d;
     color: white;
     text-align: center;
     padding: 2em 0;
