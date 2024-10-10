@@ -6,6 +6,7 @@
     <title>Portofolio Ikram</title>
     <link rel="icon" href="ContentImage/Logo.png" type="image/png">
     <link rel="stylesheet" href="CSS/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -62,11 +63,8 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>Responsive Web Design</li>
                     <li>PHP</li>
                     <li>SQL</li>
-                    <li>C#</li>
-                    <li>asp.NET</li>
                     <li>Java</li>
                     <li>GIT</li>
                     <li>Bootstrap</li>
@@ -76,18 +74,14 @@
             <div class="experience">
                 <h3>My Experience</h3>
                 <ul>
-                    <li>  Experience in contributing to restaurant reservation web development, with
-                        responsibility of creating a login/register page connected to the database, as well as optimizing the web interface to be responsive.
-                        optimizing the web interface to be responsive
+                    <li>
+                        <b>Campus Projects :</b> Build login/register system for restaurant reservation web, ensuring responsive web interface.
                     </li>
                     <li>
-                        Played a role in the development of the Q&A website 'TanyaKode', with the responsibility of
- responsibility of creating an efficient search engine, implementing responsive design to improve user experience, and developing
- design to improve user experience, and developing interactive pages to facilitate the Q&A process.
- pages to facilitate the Q&A process
+                        <b>Arsip Nasional Republik Indonesia (Internship) : </b> As a Web Developer and Project Manager, fully responsible for the design, development, and implementation of ESP32 CAM-based room monitoring system. My main tasks include building the backend infrastructure, integrating with the hardware, as well as managing the overall project, which will be developed in the future.
                     </li>
                     <li>
-                        Experienced in developing a web for purchasing concert tickets using C# with the asp.NET framework, by creating a landing page display, a page for selecting seats, a page for filling in user personal data and a ticket printing page to get the ticket by displaying the user's name with the price, seat and others selected by the user.
+                        <b>Campus Project :</b> Implementing the Figma design using a tech stack of HTML, CSS, JavaScript, C#, and .NET to develop an interactive voting website for JKT48 fans.
                     </li>
                 </ul>
             </div>
@@ -100,6 +94,14 @@
 <section id="portfolio">
     <div class="container">
         <h2>My Projects</h2>
+
+        <div class="warning-container">
+            <div class="warning-icon" onclick="toggleWarning()">!</div>
+            <div class="warning-message">
+                Beberapa Project mungkin belum di tambahkan atau belum di update.
+            </div>
+        </div>        
+
         <div class="portfolio-navigation">
             <button class="slideBtn" id="nextBtn">Next</button>
             <button class="slideBtn" id="prevBtn">Prev</button>
@@ -126,17 +128,6 @@
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://ikrmmrbsy.github.io/FlickSearcher/" class="view-link">View</a>
-            </div>
-            <div class="portfolio-item">
-                <img src="ContentImage/porto5.jpg" alt="Project Image">
-                <h3>Not Your Era</h3>
-                <p>This website is to commemorate and honor the musical journey of great bands through memorable writings and images.</p>
-                <h4>Technologies:</h4>
-                <p class="technologies">HTML, CSS, JavaScript</p>
-                <a href="https://github.com/IkrmMrbsy/NotYourEra" class="social-icon1">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://ikrmmrbsy.github.io/NotYourEra/" class="view-link">View</a>
             </div>
             <div class="portfolio-item">
                 <img src="ContentImage/porto6.jpg" alt="Project Image">
@@ -214,4 +205,5 @@
 </body>
 <script src="JavaScript/DarkMode.js"></script>
 <script src="JavaScript/javascript.js"></script>
+<script src="JavaScript/warningMessage.js"></script>
 </html>

@@ -350,6 +350,46 @@ nav ul li a:hover {
     color: #fff; 
 }
 
+.warning-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.warning-message {
+    background-color: #fff3cd;
+    border: 1px solid #ffcc00;
+    color: #856404;
+    border-radius: 8px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    opacity: 0; /* Mulai dengan opacity 0 */
+    transform: scale(0.9); /* Mulai dengan scale kecil */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Transisi yang lebih halus */
+    display: none; /* Sembunyikan pesan secara default */
+}
+
+/* Icon styling */
+.warning-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
 #portfolio .portfolio-item img {
     width: 100%;
     height: 200px;
@@ -654,6 +694,22 @@ footer span{
     .icon-link:last-child::after {
         display: none; 
     }
+
+    .warning-message {
+        position: fixed; /* Menggunakan position fixed untuk menempatkan pesan di tengah */
+        top: 36%; /* Mengatur posisi dari atas */
+        left: 5%; /* Mengatur posisi dari kiri */
+        transform: translate(-50%, -50%); /* Mentranslate pesan agar tepat di tengah */
+        width: 90%; /* Lebar 90% untuk tampilan HP */
+        padding: 5px; /* Padding yang lebih besar untuk estetika */
+        border-radius: 12px; /* Sudut lebih bulat */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk memberi kedalaman */
+    }
+
+    .warning-container {
+        flex-direction: column; /* Stack the icon and message vertically */
+        align-items: center; /* Center items horizontally */
+    }
 }
 
 
@@ -664,6 +720,16 @@ footer span{
 
     .hero-content p {
         font-size: 1.1em; 
+    }
+
+    .warning-message {
+        font-size: 1.1em;
+        padding: 12px 18px;
+    }
+
+    .warning-icon {
+        width: 22px;
+        height: 22px;
     }
 }
 
