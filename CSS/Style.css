@@ -696,7 +696,6 @@ footer span{
     }
 
     .warning-message {
-        position: fixed; /* Menggunakan position fixed untuk menempatkan pesan di tengah */
         top: 36%; /* Mengatur posisi dari atas */
         left: 5%; /* Mengatur posisi dari kiri */
         transform: translate(-50%, -50%); /* Mentranslate pesan agar tepat di tengah */
