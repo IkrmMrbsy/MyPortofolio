@@ -1,34 +1,55 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll('.portfolio-item');
-    let currentItem = 0;
-
-    function showItem(index) {
-        items.forEach((item, i) => {
-            item.classList.remove('active');
-            if (i === index) {
-                item.classList.add('active');
-            }
-        });
+// Untuk Efek Latar Belakang (Dynamic Particle Background)
+function createParticles() {
+    const parallaxBg = document.getElementById('parallaxBg');
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        particle.style.width = `${Math.random() * 10}px`;
+        particle.style.height = particle.style.width;
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        parallaxBg.appendChild(particle);
     }
+}
 
-    document.getElementById('prevBtn').addEventListener('click', function() {
-        currentItem = (currentItem > 0) ? currentItem - 1 : items.length - 1;
-        showItem(currentItem);
+createParticles();
+
+// Untuk Smooth Scrolling Antar Bagian Halaman
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-
-    document.getElementById('nextBtn').addEventListener('click', function() {
-        currentItem = (currentItem + 1) % items.length;
-        showItem(currentItem);
-    });
-
-    showItem(currentItem);
 });
 
-function scrollToAbout() {
-    const aboutSection = document.getElementById('about');
+// Untuk Interaksi dengan Konten Setelah Halaman Dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    const skillCards = document.querySelectorAll('.skill-card');
+    const projectCards = document.querySelectorAll('.project-card');
 
-    setTimeout(() => {
+    // Untuk Efek Hover pada Skill Cards
+    skillCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.1) rotate(5deg)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1) rotate(0deg)';
+        });
+    });
 
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }, 1000);
-}
+    // Untuk Efek Hover pada Project Cards
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.boxShadow = '0 20px 40px rgba(66, 135, 245, 0.3)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.boxShadow = 'none';
+        });
+    });
+});
