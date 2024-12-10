@@ -1,3 +1,18 @@
+// Untuk Smooth Scrolling Antar Bagian Halaman
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1); // Remove `#`
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
 // Untuk Efek Latar Belakang (Dynamic Particle Background)
 function createParticles() {
     const parallaxBg = document.getElementById('parallaxBg');
@@ -17,16 +32,6 @@ function createParticles() {
 }
 
 createParticles();
-
-// Untuk Smooth Scrolling Antar Bagian Halaman
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 // Untuk Interaksi dengan Konten Setelah Halaman Dimuat
 document.addEventListener('DOMContentLoaded', () => {
