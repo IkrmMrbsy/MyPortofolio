@@ -1,17 +1,29 @@
 // Untuk Smooth Scrolling Antar Bagian Halaman
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1); // Remove `#`
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+// Smooth scrolling functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all links with hashes
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default click behavior
+
+            // Get the target element
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // Smoothly scroll to the target section
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
 });
+
+
 
 // Untuk Efek Latar Belakang (Dynamic Particle Background)
 function createParticles() {
