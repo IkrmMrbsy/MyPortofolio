@@ -1,19 +1,15 @@
 // Untuk Smooth Scrolling Antar Bagian Halaman
-// Smooth scrolling functionality
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all links with hashes
-    const links = document.querySelectorAll('a[href^="#"]');
+    const links = document.querySelectorAll('[data-target]');
 
     links.forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default click behavior
+            event.preventDefault();
 
-            // Get the target element
-            const targetId = this.getAttribute('href');
+            const targetId = this.getAttribute('data-target');
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Smoothly scroll to the target section
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -22,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 
 
