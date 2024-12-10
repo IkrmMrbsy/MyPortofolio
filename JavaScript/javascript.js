@@ -1,25 +1,3 @@
-// Untuk Smooth Scrolling Antar Bagian Halaman
-window.onload = function() {
-    const links = document.querySelectorAll('[data-target]');
-    links.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('data-target');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-}
-
-
-
-
-
 // Untuk Efek Latar Belakang (Dynamic Particle Background)
 function createParticles() {
     const parallaxBg = document.getElementById('parallaxBg');
