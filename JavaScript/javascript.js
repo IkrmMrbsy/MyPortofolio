@@ -1,14 +1,11 @@
 // Untuk Smooth Scrolling Antar Bagian Halaman
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function() {
     const links = document.querySelectorAll('[data-target]');
-
     links.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();
-
             const targetId = this.getAttribute('data-target');
             const targetElement = document.querySelector(targetId);
-
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
@@ -17,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});
+}
+
 
 
 
